@@ -1,0 +1,102 @@
+/* Editor nav */
+
+ul.nav-tabs {
+	float: inherit;
+	display: flex;
+	justify-content: center;
+}
+
+ul.nav-tabs li {
+	display: inline-flex;
+}
+
+
+
+
+/* Side menu */
+
+.responsive-menu-toggle-icon,
+.responsive-menu-toggle-icon:visited {
+	float: right;
+	width: 40px;
+	height: 40px;
+	border: 1px solid #999;
+  border-radius: 40px;
+  -moz-border-radius: 40px;
+  -webkit-border-radius: 40px;
+}
+
+.responsive-menu-toggle-icon:focus,
+.responsive-menu-toggle-icon:hover,
+.responsive-menu-toggle-icon:active {
+	border: 1px solid #f2b510;
+}
+
+.responsive-menu-toggle-icon:before,
+.responsive-menu-toggle-icon:after,
+.responsive-menu-toggle-icon span.icon {
+	background: #999;
+	height: 1px;
+	left: 9px;
+}
+
+.responsive-menu-toggle-icon:hover:before,
+.responsive-menu-toggle-icon:hover:after,
+.responsive-menu-toggle-icon:hover span.icon {
+	background: #f2b510;
+}
+
+.responsive-menu-toggle-icon:before 		{top: 12px;}
+.responsive-menu-toggle-icon:after 			{top: 24px;}
+.responsive-menu-toggle-icon span.icon	{top: 18px;}
+
+.mm-wrapper_opening .responsive-menu-toggle-icon:before,
+.mm-wrapper_opening .responsive-menu-toggle-icon:after {
+  top: 18px;
+}
+
+#block-responsivemenumobileicon .label {
+	display: none;
+}
+
+.mm-listitem a:hover {
+  color: #f98105;
+}
+
+
+/* Main menu */
+
+#block-lkb9-main-menu ul.navbar-nav {
+	float: inherit;
+	display: flex;
+	justify-content: center;
+}
+
+#block-lkb9-main-menu ul.navbar-nav li {
+	display: inline-flex;
+}
+
+@media only screen and (max-width : 767px) {
+	#block-lkb9-main-menu {
+		display: none;
+	}
+}
+
+#block-lkb9-main-menu ul.navbar-nav > li > a,
+#block-lkb9-main-menu ul.navbar-nav > li > a:visited {
+	font-size: 16px;
+	line-height: 16px;
+	color: #f5f5f7;
+	text-decoration: none;
+	outline: none;
+	padding-bottom: 12px;
+	border-bottom: 3px solid #141414;
+}
+
+#block-lkb9-main-menu ul.navbar-nav > li > a:hover,
+#block-lkb9-main-menu ul.navbar-nav > li > a:focus,
+#block-lkb9-main-menu ul.navbar-nav > li > a:active {
+	color: #f5f5f7;
+	background-color: inherit;
+	border-bottom: 3px solid #f2b510;
+}

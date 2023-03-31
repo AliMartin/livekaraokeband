@@ -1,0 +1,135 @@
+a {
+	&:focus {
+		outline: none;
+	}
+}
+
+// Remove underline on links classed as buttons
+a.btn {
+	text-decoration: none;
+	font-family: $font-family-sans-serif;
+	text-transform: uppercase;
+	font-size: inherit;
+	padding: .375rem 1.5rem;
+	min-width: 120px;
+}
+
+button,
+.btn {
+	margin: 0 10px 10px;
+	&:hover,
+	&:focus,
+	&:active,
+	&:active:hover,
+	&:active:focus {
+		outline: none;
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+	}
+}
+
+.button-paragraph a {
+	margin: 12px auto;
+}
+
+button .label {
+	padding: 0;
+	font-size: inherit;
+	font-weight: inherit;
+	line-height: inherit;
+	color: inherit;
+	border-radius: inherit;
+}
+
+.btn-info,
+.btn-danger,
+.btn-primary,
+.btn-success {
+	font-family: $font-family-sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	padding: .375rem 1.5rem;
+	min-width: 120px;
+	-webkit-border-radius: $border-radius-img;
+	-moz-border-radius: $border-radius-img;
+	border-radius: $border-radius-img;
+}
+
+.btn-primary {
+	background-color: $yellow;
+	border-color: $yellow;
+	color: $white;
+
+	&:hover,
+	&:focus,
+	&:active,
+	&:active:hover,
+	&:active:focus {
+		background-color: $orange;
+		border-color: $orange;
+		color: $white;
+	}
+}
+
+.btn-success {
+	background-color: $green;
+	border-color: $green;
+	color: $black;
+
+	&:hover,
+	&:focus {
+		background-color: darken($green, 10%);
+		border-color: darken($green, 10%);
+		color: $white;
+	}
+	&:active,
+	&:active:hover,
+	&:active:focus {
+		background-color: darken($green, 20%);
+		border-color: darken($green, 20%);
+		color: $white;
+	}
+}
+
+.btn-info {
+	background-color: $blue;
+	border-color: $blue;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background-color: darken($blue, 10%);
+		border-color: darken($blue, 10%);
+		color: $white;
+	}
+	&:active,
+	&:active:hover,
+	&:active:focus {
+		background-color: darken($blue, 20%);
+		border-color: darken($blue, 20%);
+		color: $white;
+	}
+}
+
+.btn-danger {
+	background-color: $red;
+	border-color: $red;
+	color: $white;
+
+	&:hover,
+	&:focus {
+		background-color: darken($red, 10%);
+		border-color: darken($red, 10%);
+		color: $white;
+	}
+	&:active,
+	&:active:hover,
+	&:active:focus {
+		background-color: darken($red, 20%);
+		border-color: darken($red, 20%);
+		color: $white;
+	}
+}
+
+

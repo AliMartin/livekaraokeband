@@ -1,0 +1,105 @@
+.field--name-webform {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+// Reset defaults
+select {
+	-webkit-appearance: none; 
+	-moz-appearance: none;
+	appearance: none;
+}
+
+
+// Placeholder text
+.form-control::-webkit-input-placeholder	{color: #999;} /* Chrome/Opera/Safari */
+.form-control::-moz-placeholder 					{color: #999;} /* Firefox 19+ */
+.form-control:-ms-input-placeholder 			{color: #999;} /* IE 10+ */
+.form-control:-moz-placeholder 						{color: #999;} /* Firefox 18- */
+
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+form.webform-submission-form h2 {
+	font-size: 1.8rem;
+}
+
+label {
+	text-align: center;
+	margin-bottom: 12px;
+	font-size: 1.1rem;
+	width: 100%;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  font-size: 1.1rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none !important;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+	text-align: center;
+}
+
+.form-control {
+  border: 3px solid $yellow;
+  box-shadow: inherit;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+  resize: none;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+	border-radius: 25px;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	text-align: center;
+
+  &:focus {
+    border: 3px solid $orange;
+  }
+
+}
+
+.ui-widget-content a {
+  color: $black;
+  text-decoration: none;
+}
+
+.submission-summary {
+  background-color: $gray-900;
+  border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px; 
+  padding: 10px;
+  font-weight: 900;
+  margin-bottom: 1rem;
+}
+
+
+/* Help text */
+
+.control-group .help-inline,
+.help-block {
+	color: #999;
+	font-size: 13px;
+	line-height: 17px;
+	text-transform: uppercase;
+	margin: 12px 0 12px 0;
+}
+
+.webform-confirmation__back {
+	text-transform: uppercase;
+}

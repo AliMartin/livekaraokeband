@@ -1,0 +1,115 @@
+// Sub theme styling.
+@import 'variables_drupal';
+
+// Bootstrap overriden variables.
+// @see https://getbootstrap.com/docs/5.1/customize/sass/#variable-defaults.
+@import 'variables_bootstrap';
+
+// Include bootstrap.
+@import '../../../../themes/contrib/bootstrap5/scss/style';
+
+@import 'node';
+@import 'links';
+@import 'header';
+@import 'footer';
+@import 'links';
+@import 'menu';
+@import 'webforms';
+
+
+body,
+.mm-page {
+  background-color: $black;
+  color: $white;
+}
+
+.page-node-type-show .webform-submission-form {
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.view-live-shows {
+  text-align: center;
+  
+  .view-footer {
+    text-transform: uppercase;
+    margin: 0 0 30px 0;
+  }
+}
+
+.view-host .view-content,
+.view-live-shows .view-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .views-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 220px;
+    padding: 30px;
+    margin: 15px 15px;
+    border-radius: $border-radius-img;
+    background-color: $gray-900;
+    text-align: center;
+
+    .views-field-field-show-date,
+    .views-field-title,
+    .views-field-field-show-location {
+      margin-bottom: 10px;
+    }
+
+    .views-field-field-show-date,
+    .views-field-field-show-location {
+      font-weight: 600;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+.view-entries {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .view-header {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $font-weight-bold;
+  }
+
+  .views-row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-width: 300px;
+    max-width: 500px;
+    height: 120px;
+    padding: 30px;
+    margin: 15px auto;
+    border-radius: $border-radius-img;
+    background-color: $gray-900;
+    text-align: center;
+  }
+
+  .views-field-created {
+    text-transform: uppercase;
+    font-size: small;
+    letter-spacing: 1px;
+  }
+  .views-field-webform-submission-value,
+  .views-field-webform-submission-value-1 {
+    font-weight: 700;
+  }
+
+}

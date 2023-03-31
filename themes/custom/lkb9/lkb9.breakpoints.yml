@@ -1,0 +1,23 @@
+lkb9.mobile:
+  label: mobile
+  mediaQuery: '(min-width: 0px)'
+  weight: 0
+  multipliers:
+    - 1x
+    - 2x
+
+lkb9.tablet:
+  label: tablet
+  mediaQuery: '(min-width: 768px)'
+  weight: 1
+  multipliers:
+    - 1x
+    - 2x
+
+lkb9.desktop:
+  label: desktop
+  mediaQuery: '(min-width: 1200px)'
+  weight: 2
+  multipliers:
+    - 1x
+    - 2x

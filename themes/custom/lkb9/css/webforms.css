@@ -1,0 +1,203 @@
+.field--name-webform {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+/* Placeholder text */
+
+.form-control::-webkit-input-placeholder	{color: #999;} /* Chrome/Opera/Safari */
+.form-control::-moz-placeholder 					{color: #999;} /* Firefox 19+ */
+.form-control:-ms-input-placeholder 			{color: #999;} /* IE 10+ */
+.form-control:-moz-placeholder 						{color: #999;} /* Firefox 18- */
+
+
+
+
+/****** OLD CSS ******/
+
+.form-group {
+	margin-bottom: 30px;
+}
+
+label {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	text-align: center;
+	margin-bottom: 12px;
+	font-size: 18px;
+	line-height: 18px;
+	width: 100%;
+}
+
+.form-control {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 300;
+	font-size: 20px;
+	line-height: 24px;
+	color: #000;
+	border: 2px solid #f2b510;
+	background-color: #fff;
+	border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	-moz-border-radius: 6px;
+	box-shadow: inherit;
+	height: 44px;
+	padding: 10px 20px;
+}
+
+input[type=text],
+input[type=email],
+input[type=password],
+textarea {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-shadow: none !important;
+}
+
+input[type=text],
+input[type=email],
+input[type=password] {
+	text-align: center;
+}
+
+.form-control:focus {
+  border-color: #f98105;
+  box-shadow: inherit;
+  outline: none;
+  background-color: #fff;
+  color: #000;
+}
+
+textarea.form-control {
+	resize: none;
+}
+
+.has-error .form-control {
+	border-color: #F20542;
+}
+
+legend {
+	color: #fff;
+}
+
+
+
+/* Help text */
+
+.control-group .help-inline,
+.help-block {
+	color: #999;
+	font-size: 13px;
+	line-height: 17px;
+	text-transform: uppercase;
+	margin: 12px 0 12px 0;
+}
+
+
+
+/* Progress bar */
+
+.webform-progress-tracker .progress-step.is-active .progress-text,
+.webform-progress-tracker .progress-step.is-complete .progress-text {
+	color: #fff;
+}
+
+.progress-step.is-active .progress-marker::before,
+.webform-progress-tracker .progress-step.is-active:hover .progress-marker::before {
+	background-color: #f2b510;
+}
+
+
+
+/* Select boxes */
+
+.form-select {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: url('../images/expanded-green.png') no-repeat right 20px center #fff;
+	overflow: hidden;
+}
+
+.form-select:focus {
+	color: #333;
+	color: rgba(0,0,0,0);
+	text-shadow: 0 0 0 #000;
+	outline: none;
+}
+
+select option {
+	color: #333 !important;
+	background-color: #fff !important;
+}
+
+
+
+/*
+ * Contact page
+ */
+
+body.node-type-webform .main-content {
+	text-align: center;
+}
+
+a.btn i.fa-phone {
+	margin-right: 10px;
+}
+
+
+
+.g-recaptcha > div {
+	margin: 0 auto 30px;
+}
+
+
+
+/*
+ * Song request app
+ */
+
+body.song-request .form-type-webform-autocomplete .input-group-addon {
+	display: none;
+}
+
+body.song-request .form-type-webform-autocomplete .input-group .form-control:first-child {
+	border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+}
+
+body.song-request.article-layout .field--name-field-image {
+	margin: 0 -15px 15px -15px;
+}
+
+body.song-request.article-layout .field--name-node-title {
+	margin-bottom: 15px;
+}
+
+body.song-request.article-layout .form-group {
+	margin-bottom: 15px;
+}
+
+body.song-request h1 {
+	margin: 0 auto;
+}
+
+body.song-request .field--name-field-teaser {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+
+body.song-request #block-socialmenu {
+	padding-top: 60px;
+}
+
+body.song-request footer.footer h2 {
+	font-size: 28px;
+	line-height: 28px;
+}

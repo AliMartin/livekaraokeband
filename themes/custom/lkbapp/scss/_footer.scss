@@ -1,0 +1,133 @@
+footer.mt-auto {
+  margin-top: 90px !important;
+  padding-top: 30px;
+  padding-bottom: 120px;
+  border-top: none;
+  background-color: $gray;
+  color: #fff;
+
+  h2 {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+}
+
+
+
+
+/* Social menu */
+
+#block-socialmenu-2 {
+	margin-bottom: 30px;
+
+  .field--name-body {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .field--name-body a,
+  .field--name-body a:visited {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px 0 5px; 
+    font-size: 20px;
+    line-height: 14px;
+    color: $gray-600;
+    text-decoration: none;
+    border: 1px solid $gray-600;
+    border-radius: 40px;
+    -moz-border-radius: 40px;
+    -webkit-border-radius: 40px;
+    height: 40px;
+    width: 40px;
+    outline: none;
+  }
+
+  .field--name-body a:focus,
+  .field--name-body a:hover,
+  .field--name-body a:active {
+    color: $orange;
+    border: 1px solid $orange;
+    text-decoration: none;
+  }
+
+}
+
+
+
+
+
+
+/* Footer text */
+
+footer #block-footertext-2 .field--name-body {
+	text-align: center;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  max-width: 800px;
+  margin: 0 auto 10px auto;
+}
+
+
+
+/* Footer menu */
+
+footer #block-footermenu-2 {
+	margin-bottom: 20px;
+}
+
+footer #block-footermenu-2 ul.nav {
+	float: inherit;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+  flex-direction: row;
+}
+
+footer #block-footermenu-2 ul.nav > li {
+	display: inline-flex;
+	margin: 0 10px 5px 10px;
+}
+
+footer #block-footermenu-2 a,
+footer #block-footermenu-2 a:visited {
+  font-size: 14px !important;
+  line-height: 16px !important;
+  color: #f2b510;
+  text-decoration: none;
+	outline: none;
+	padding: 0;
+}
+
+footer #block-footermenu-2 a:focus,
+footer #block-footermenu-2 a:hover,
+footer #block-footermenu-2 a:active {
+	background-color: inherit;
+	color: #f98105;
+}
+
+
+
+/* Company logos */
+
+#block-companylogos-2 .field--name-body {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+#block-companylogos-2 span {
+	display: inline-flex;
+	margin: 0 10px 10px 10px;
+}
+
+#block-companylogos-2 a {
+	outline: none;
+}
+
+#block-companylogos-2 img {
+	height: 30px;
+	width: auto;
+}

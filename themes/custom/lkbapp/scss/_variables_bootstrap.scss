@@ -1,0 +1,47 @@
+// Bootstrap variables (overrides).
+
+
+//$breadcrumb-divider-color: $gray-700 !default;
+//$breadcrumb-active-color: $gray-700 !default;
+
+//$navbar-light-color: rgba($black, .6) !default;
+//$navbar-dark-color: rgba($white, .6) !default;
+
+$form-text-margin-top: 0 !default;
+$legend-font-size: 1rem !default;
+$table-cell-padding-x: .75rem;
+
+
+// Override default bootstrap colors for accessibility
+
+$white: #fff !default;
+$black: #000 !default;
+$gray: #0c0c0c !default;
+$yellow: #f2b510 !default;
+$orange: #f98105 !default;
+$blue: #1143F2 !default;
+$red: #F20542 !default;
+$cyan: #1DBDF2 !default;
+$pink: #D629F2 !default;
+$green: #29F245 !default;
+
+// Fonts
+$font-family-sans-serif: 'Open Sans', sans-serif;
+$font-family-base: $font-family-sans-serif;
+$font-size-base: 1rem;
+$line-height-base: 1.5;
+$font-weight-normal: 300;
+$font-weight-bold: 700;
+
+$headings-font-family: 'Montserrat', sans-serif;
+$headings-font-weight: 300;
+
+// Hyperlinks
+$link-color: $yellow;
+$link-decoration: none;
+$link-hover-color: $orange;
+$link-hover-decoration: none;
+
+
+// Image border radius
+$border-radius-img: 7px;

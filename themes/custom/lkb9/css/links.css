@@ -1,0 +1,104 @@
+.main-container a,
+.main-container a:visited {
+	color: #f2b510;
+	text-decoration: none;
+	outline: none;
+}
+
+.main-container a:focus,
+.main-container a:hover,
+.main-container a:active {
+	color: #f98105;
+	text-decoration: none;
+}
+
+
+
+
+
+
+/*
+ * Make enquiry buttons
+ * Contact form
+ */
+
+a.make-enquiry,
+.btn-default,
+.field--name-webform form button.button,
+.btn-primary,
+#block-views-block-reviews-block-1 .view-content a,
+.views-view-grid .link a {
+	padding: 10px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border: 1px solid #f2b510;
+	color: #fff;
+	background-color: #f2b510;
+	font-size: 20px;
+	line-height: 20px;
+	font-weight: 700;
+	text-align: center;
+	text-transform: uppercase;
+	width: 200px;
+	display: block;
+	outline: none;
+}
+
+a.make-enquiry:hover,
+a.make-enquiry:focus,
+.btn-default:hover,
+.btn-default:focus,
+.btn-primary:hover,
+.btn-primary:focus,
+#block-views-block-reviews-block-1 .view-content a:hover,
+#block-views-block-reviews-block-1 .view-content a:focus,
+.views-view-grid .link a:hover,
+.views-view-grid .link a:focus {
+	text-decoration: none;
+	background-color: #f98105;
+	color: #fff;
+	border: 1px solid #f98105;
+}
+
+.field-name-field-button a,
+.field-name-make-enquiry-top a,
+.field--name-webform form button.button {
+	margin: 0 auto 30px auto;
+}
+
+a.make-enquiry {
+	width: 250px;
+	margin: 0 auto 60px auto;
+}
+
+a.make-enquiry i {
+	margin-right: 10px;
+}
+
+.field-name-make-enquiry-bottom a {
+	margin: 0 auto 60px auto;
+}
+
+.listing-page a.make-enquiry {
+	margin: 30px auto 30px auto;
+}
+
+.node-type-landing .field-name-make-enquiry-bottom {
+	height: 60px;
+	margin: 30px auto;
+}
+
+.form-actions {
+	text-align: center;
+}
+
+.btn-default,
+.field--name-webform form button.button,
+btn-primary,
+.field--name-webform .form-actions .btn {
+	width: 200px;
+	margin: 0 10px 10px 10px;
+	display: inline-block;
+	outline: none;
+}
