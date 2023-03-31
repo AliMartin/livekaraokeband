@@ -1,0 +1,35 @@
+uuid: 2de0fce9-885b-4e3b-8ef9-cc07313c5511
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.supermenu
+  module:
+    - block_class
+    - blockgroup
+    - context
+  theme:
+    - lkb9
+third_party_settings:
+  block_class:
+    classes: container
+id: supermenu
+theme: lkb9
+region: header
+weight: -7
+provider: null
+plugin: 'block_group:supermenu'
+settings:
+  id: 'block_group:supermenu'
+  label: Supermenu
+  label_display: '0'
+  provider: blockgroup
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

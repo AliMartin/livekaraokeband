@@ -1,0 +1,27 @@
+uuid: eeba4bac-6978-4c63-bd4c-650e81d23cf9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_attachments
+    - node.type.old_news
+  module:
+    - file
+id: node.old_news.field_attachments
+field_name: field_attachments
+entity_type: node
+bundle: old_news
+label: Attachments
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: attachments
+  file_extensions: 'txt doc docx pdf jpg jpeg png'
+  max_filesize: ''
+  description_field: true
+field_type: file

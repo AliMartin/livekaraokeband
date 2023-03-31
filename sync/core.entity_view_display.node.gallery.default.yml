@@ -1,0 +1,97 @@
+uuid: 68be61c9-1e0c-4abc-b1cd-d7d75f14b490
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.gallery.body
+    - field.field.node.gallery.field_gallery_image
+    - field.field.node.gallery.field_image
+    - field.field.node.gallery.field_teaser
+    - node.type.gallery
+  module:
+    - ds
+    - juicebox
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - field_gallery_image
+        - node_title
+        - field_teaser
+        - 'dynamic_block_field:node-make_enquiry_button'
+        - body
+    fields:
+      'dynamic_block_field:node-make_enquiry_button':
+        plugin_id: 'dynamic_block_field:node-make_enquiry_button'
+        weight: 3
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          wrapper: h1
+          class: ''
+id: node.gallery.default
+targetEntityType: node
+bundle: gallery
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_gallery_image:
+    type: juicebox_formatter
+    label: hidden
+    settings:
+      image_style: ''
+      thumb_style: juicebox_square_thumb
+      caption_source: ''
+      title_source: ''
+      jlib_galleryWidth: 100%
+      jlib_galleryHeight: 100%
+      jlib_backgroundColor: '#222222'
+      jlib_textColor: 'rgba(255,255,255,1)'
+      jlib_thumbFrameColor: 'rgba(242,181,16,.5)'
+      jlib_showOpenButton: true
+      jlib_showExpandButton: true
+      jlib_showThumbsButton: true
+      jlib_useThumbDots: false
+      jlib_useFullscreenExpand: '0'
+      manual_config: ''
+      custom_parent_classes: ''
+      apply_markup_filter: true
+      linkurl_source: ''
+      linkurl_target: _blank
+      incompatible_file_action: show_icon_and_link
+    third_party_settings:
+      ds:
+        ds_limit: ''
+    weight: 0
+    region: content
+  field_teaser:
+    type: basic_string
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  field_image: true
+  links: true

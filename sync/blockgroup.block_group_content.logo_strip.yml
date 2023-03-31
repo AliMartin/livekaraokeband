@@ -1,0 +1,6 @@
+uuid: c0f51506-f8fd-4389-a80e-31d7f2d7b15f
+langcode: en
+status: true
+dependencies: {  }
+id: logo_strip
+label: 'Logo strip'

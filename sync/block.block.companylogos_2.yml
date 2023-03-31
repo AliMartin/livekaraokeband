@@ -1,0 +1,45 @@
+uuid: c2204f6c-38b2-447a-9266-f0436eed8759
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:a1b3aeeb-db9c-4caf-a24c-14a8b76819f8'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkbapp
+id: companylogos_2
+theme: lkbapp
+region: footer
+weight: -3
+provider: null
+plugin: 'block_content:a1b3aeeb-db9c-4caf-a24c-14a8b76819f8'
+settings:
+  id: 'block_content:a1b3aeeb-db9c-4caf-a24c-14a8b76819f8'
+  label: 'Company logos'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

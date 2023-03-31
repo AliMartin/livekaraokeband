@@ -1,0 +1,11 @@
+id: make_enquiry_button
+label: 'Make enquiry button top'
+ui_limit: ''
+type: block
+type_label: 'Block field'
+entities:
+  node: node
+properties:
+  block: 'block_content:2ee06822-ec57-4716-819a-7ca83edcabf9'
+  use_block_title: false
+  add_block_wrappers: false

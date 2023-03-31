@@ -1,0 +1,45 @@
+uuid: 048929d0-5f65-4ac7-9fad-2e753ebb1333
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:3d404396-c59b-4c3c-8620-3677ef6ab86d'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkbapp
+id: socialmenu_2
+theme: lkbapp
+region: footer
+weight: -6
+provider: null
+plugin: 'block_content:3d404396-c59b-4c3c-8620-3677ef6ab86d'
+settings:
+  id: 'block_content:3d404396-c59b-4c3c-8620-3677ef6ab86d'
+  label: 'Follow us on social media'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

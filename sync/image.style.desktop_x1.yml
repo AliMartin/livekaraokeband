@@ -1,0 +1,17 @@
+uuid: edbc8875-2882-48ce-888b-5dd26d0e239b
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: desktop_x1
+label: desktop_x1
+effects:
+  289dd8c9-1faa-4605-aa4d-16598527466b:
+    id: focal_point_scale_and_crop
+    data:
+      width: 1500
+      height: 500
+      crop_type: focal_point
+    weight: 2
+    uuid: 289dd8c9-1faa-4605-aa4d-16598527466b

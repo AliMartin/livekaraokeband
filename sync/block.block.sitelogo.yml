@@ -1,0 +1,38 @@
+uuid: b3f6ee66-7645-4fd0-8a27-33b02568a497
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:85e3bc12-a087-4b2c-b69d-577a8665f3bc'
+  module:
+    - block_class
+    - block_content
+    - context
+  theme:
+    - lkb9
+third_party_settings:
+  block_class:
+    classes: 'site-logo col-xs-2 col-sm-3'
+id: sitelogo
+theme: lkb9
+region: supermenu
+weight: -7
+provider: null
+plugin: 'block_content:85e3bc12-a087-4b2c-b69d-577a8665f3bc'
+settings:
+  id: 'block_content:85e3bc12-a087-4b2c-b69d-577a8665f3bc'
+  label: 'Site logo'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

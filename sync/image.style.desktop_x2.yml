@@ -1,0 +1,17 @@
+uuid: daa34cb6-cb0d-44b4-84fc-2c967388754a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: desktop_x2
+label: desktop_x2
+effects:
+  13fe0873-f497-4f8b-ab62-f71eda573cab:
+    id: focal_point_scale_and_crop
+    data:
+      width: 3000
+      height: 1000
+      crop_type: focal_point
+    weight: 1
+    uuid: 13fe0873-f497-4f8b-ab62-f71eda573cab

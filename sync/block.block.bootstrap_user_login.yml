@@ -1,0 +1,20 @@
+uuid: e23bcd3f-ab58-4129-a08b-55b3b3937a5a
+langcode: en
+status: false
+dependencies:
+  module:
+    - user
+  theme:
+    - bootstrap
+id: bootstrap_user_login
+theme: bootstrap
+region: navigation
+weight: 0
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: ''
+  label_display: '0'
+  provider: user
+visibility: {  }

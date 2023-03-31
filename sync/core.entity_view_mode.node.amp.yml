@@ -1,0 +1,10 @@
+uuid: 8a886101-2770-4843-a160-7b0f56161f1f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.amp
+label: amp
+targetEntityType: node
+cache: true

@@ -1,0 +1,21 @@
+uuid: 15bae7df-51ed-4dae-b7d9-01e61fd8d3fc
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - bootstrap
+id: bootstrap_search_form
+theme: bootstrap
+region: navigation
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: ''
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

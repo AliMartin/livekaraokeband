@@ -1,0 +1,45 @@
+uuid: 994f87a8-4711-40b7-8dc7-cb2e32a3fd9b
+langcode: en
+status: false
+dependencies:
+  content:
+    - 'block_content:basic:1a403912-4c2a-4f97-8532-e42406d828a2'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkbapp
+id: footertext_2
+theme: lkbapp
+region: footer
+weight: -5
+provider: null
+plugin: 'block_content:1a403912-4c2a-4f97-8532-e42406d828a2'
+settings:
+  id: 'block_content:1a403912-4c2a-4f97-8532-e42406d828a2'
+  label: 'Footer text'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid

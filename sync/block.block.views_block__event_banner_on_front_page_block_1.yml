@@ -1,0 +1,53 @@
+uuid: b4036b95-d9de-4a50-a88b-28e018821d9a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.event_banner_on_front_page
+  module:
+    - block_class
+    - context
+    - system
+    - views
+  theme:
+    - lkb9
+third_party_settings:
+  block_class:
+    classes: container
+id: views_block__event_banner_on_front_page_block_1
+theme: lkb9
+region: events
+weight: 0
+provider: null
+plugin: 'views_block:event_banner_on_front_page-block_1'
+settings:
+  id: 'views_block:event_banner_on_front_page-block_1'
+  label: ''
+  label_display: visible
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

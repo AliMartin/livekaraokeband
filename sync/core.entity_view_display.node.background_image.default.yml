@@ -1,0 +1,82 @@
+uuid: 0f862f25-2776-425d-a478-073392959724
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.background_image.body
+    - field.field.node.background_image.field_image
+    - field.field.node.background_image.field_metatag
+    - node.type.background_image
+    - responsive_image.styles.article
+  module:
+    - ds
+    - metatag
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - field_image
+        - node_title
+        - body
+        - 'dynamic_copy_field:node-make_enquiry_button_bottom'
+        - field_metatag
+        - links
+    fields:
+      'dynamic_copy_field:node-make_enquiry_button_bottom':
+        plugin_id: 'dynamic_copy_field:node-make_enquiry_button_bottom'
+        weight: 3
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          wrapper: h1
+          class: ''
+id: node.background_image.default
+targetEntityType: node
+bundle: background_image
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: article
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

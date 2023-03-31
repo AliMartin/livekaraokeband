@@ -1,0 +1,22 @@
+uuid: d9e1ed9d-a313-49fa-8fdf-4dd02830447d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lkb9
+_core:
+  default_config_hash: fNNLN48MSGSLiqwIFywCuxH2Dk_IxDbaP0kYhg_IPrg
+id: lkb9_content
+theme: lkb9
+region: content
+weight: -21
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

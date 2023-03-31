@@ -1,0 +1,38 @@
+uuid: afe7b2d8-c4f8-426d-9dba-4adb1e5efa73
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:718affcd-e91b-4a31-a072-bafcabd90121'
+  module:
+    - block_class
+    - block_content
+    - context
+  theme:
+    - lkb9
+third_party_settings:
+  block_class:
+    classes: 'site-menu col-xs-8 col-xs-push-2 col-sm-6 col-sm-push-3'
+id: sitemenu
+theme: lkb9
+region: supermenu
+weight: -6
+provider: null
+plugin: 'block_content:718affcd-e91b-4a31-a072-bafcabd90121'
+settings:
+  id: 'block_content:718affcd-e91b-4a31-a072-bafcabd90121'
+  label: 'Site Menu'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

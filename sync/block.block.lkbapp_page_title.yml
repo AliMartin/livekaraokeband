@@ -1,0 +1,20 @@
+uuid: c67bfdd1-63df-4d10-bd31-083dbdc0271c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: CstS2BECelX1vWrKG8W4dnb0-IHz0F3fhwEhgkVArfY
+id: lkbapp_page_title
+theme: lkbapp
+region: content
+weight: -6
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  label_display: '0'
+  provider: core
+visibility: {  }

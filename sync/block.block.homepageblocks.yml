@@ -1,0 +1,36 @@
+uuid: 69c16b04-a1b7-4760-990c-ff7571089b76
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.home_page_blocks
+  module:
+    - blockgroup
+    - context
+    - system
+  theme:
+    - lkb9
+id: homepageblocks
+theme: lkb9
+region: content
+weight: -17
+provider: null
+plugin: 'block_group:home_page_blocks'
+settings:
+  id: 'block_group:home_page_blocks'
+  label: 'Why you should book Live Karaoke Band for your bandeoke or rockaoke experience'
+  label_display: visible
+  provider: blockgroup
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/weddings\r\n/rockaoke\r\n/bandeoke\r\n/live-karaoke-party-london\r\n/perfect-christmas-party-band"

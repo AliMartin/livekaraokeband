@@ -1,0 +1,34 @@
+uuid: d902c694-08fd-4dfa-99f0-2c258127551f
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:589f2c8a-7a74-4c52-a7fd-bdfe936ac09d'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkb9
+id: homepageblockmostexperienced
+theme: lkb9
+region: home_page_blocks
+weight: -14
+provider: null
+plugin: 'block_content:589f2c8a-7a74-4c52-a7fd-bdfe936ac09d'
+settings:
+  id: 'block_content:589f2c8a-7a74-4c52-a7fd-bdfe936ac09d'
+  label: 'Home page block - most experienced'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

@@ -1,0 +1,48 @@
+uuid: 557c1932-e324-4b8d-8d88-a70f9d1d6a2d
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.desktop_x1
+    - image.style.desktop_x2
+    - image.style.mobile_x1
+    - image.style.mobile_x2
+    - image.style.tablet_x1
+    - image.style.tablet_x2
+  theme:
+    - lkb9
+id: article
+label: Article
+image_style_mappings:
+  -
+    image_mapping_type: image_style
+    image_mapping: desktop_x1
+    breakpoint_id: lkb9.desktop
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: desktop_x2
+    breakpoint_id: lkb9.desktop
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: tablet_x1
+    breakpoint_id: lkb9.tablet
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: tablet_x2
+    breakpoint_id: lkb9.tablet
+    multiplier: 2x
+  -
+    image_mapping_type: image_style
+    image_mapping: mobile_x1
+    breakpoint_id: lkb9.mobile
+    multiplier: 1x
+  -
+    image_mapping_type: image_style
+    image_mapping: mobile_x2
+    breakpoint_id: lkb9.mobile
+    multiplier: 2x
+breakpoint_group: lkb9
+fallback_image_style: mobile_x1

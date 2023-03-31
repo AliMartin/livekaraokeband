@@ -1,0 +1,17 @@
+uuid: 58bd44ce-18f9-41e8-a278-51a6dd2d9483
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: tablet_x1
+label: tablet_x1
+effects:
+  7c8d7ebd-feb5-4549-9991-947b5edd2555:
+    id: focal_point_scale_and_crop
+    data:
+      width: 900
+      height: 450
+      crop_type: focal_point
+    weight: 2
+    uuid: 7c8d7ebd-feb5-4549-9991-947b5edd2555

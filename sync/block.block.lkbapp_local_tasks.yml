@@ -1,0 +1,22 @@
+uuid: 1d6dcea1-7ab0-4464-be43-608e2ade013c
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: wKHgDKrnl-MQcZThlHX7enWh55sRgzTA_UwHYkCblw4
+id: lkbapp_local_tasks
+theme: lkbapp
+region: content
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

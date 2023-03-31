@@ -1,0 +1,22 @@
+uuid: 0d2e505e-a2ed-4eac-b8b6-c3caabd8f767
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: 2pQv5wywwgQ73Y6g-dvnaBYybozf6H7Jg9uUtCUA51M
+id: lkbapp_content
+theme: lkbapp
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

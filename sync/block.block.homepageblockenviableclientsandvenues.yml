@@ -1,0 +1,34 @@
+uuid: d860bbcc-547f-418b-9988-2c5aadfb2cce
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:8488c991-3b62-4524-9b90-96c9f257693c'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkb9
+id: homepageblockenviableclientsandvenues
+theme: lkb9
+region: home_page_blocks
+weight: -12
+provider: null
+plugin: 'block_content:8488c991-3b62-4524-9b90-96c9f257693c'
+settings:
+  id: 'block_content:8488c991-3b62-4524-9b90-96c9f257693c'
+  label: 'Home page block - enviable clients and venues'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

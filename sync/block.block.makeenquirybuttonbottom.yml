@@ -1,0 +1,39 @@
+uuid: 269cd3de-26cc-4946-a4fb-b5666266c910
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cba166a2-d849-4852-8d89-377b84315219'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - lkb9
+id: makeenquirybuttonbottom
+theme: lkb9
+region: content
+weight: -12
+provider: null
+plugin: 'block_content:cba166a2-d849-4852-8d89-377b84315219'
+settings:
+  id: 'block_content:cba166a2-d849-4852-8d89-377b84315219'
+  label: 'Make enquiry button bottom'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/weddings\r\n/rockaoke\r\n/bandeoke\r\n/live-karaoke-party-london\r\n/perfect-christmas-party-band"

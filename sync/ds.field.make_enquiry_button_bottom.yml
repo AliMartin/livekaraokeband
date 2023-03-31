@@ -1,0 +1,9 @@
+id: make_enquiry_button_bottom
+label: 'Make enquiry button bottom'
+ui_limit: ''
+type: copy
+type_label: 'Copy field'
+entities:
+  node: node
+properties:
+  ds_plugin: 'dynamic_block_field:node-make_enquiry_button'

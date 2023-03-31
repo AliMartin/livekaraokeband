@@ -1,0 +1,37 @@
+uuid: 04f0f3af-dd21-4f35-8f23-e4c88db8fb1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.amp
+    - field.field.node.landing.body
+    - field.field.node.landing.field_button
+    - field.field.node.landing.field_hero
+    - field.field.node.landing.field_metatag
+    - field.field.node.landing.field_teaser
+    - node.type.landing
+  module:
+    - text
+    - user
+id: node.landing.amp
+targetEntityType: node
+bundle: landing
+mode: amp
+content:
+  field_button:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_hero: true
+  field_metatag: true
+  field_teaser: true

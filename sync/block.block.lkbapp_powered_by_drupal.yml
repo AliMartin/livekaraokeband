@@ -1,0 +1,22 @@
+uuid: 7899b717-6809-478a-94eb-fa4973b7c95c
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: 7bIPlR1QbMcJwpS0Qzlxw_KdbVf9uO6AUBimns7k3lM
+id: lkbapp_powered_by_drupal
+theme: lkbapp
+region: footer
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

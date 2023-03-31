@@ -1,0 +1,45 @@
+uuid: e22fa2b4-5872-4b57-9e70-e5b475295cc7
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:cc8e8105-aefa-466b-a193-ec61eb7d9106'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkb9
+id: curatorinstagramfeed
+theme: lkb9
+region: instagram
+weight: -19
+provider: null
+plugin: 'block_content:cc8e8105-aefa-466b-a193-ec61eb7d9106'
+settings:
+  id: 'block_content:cc8e8105-aefa-466b-a193-ec61eb7d9106'
+  label: 'Curator Instagram feed'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  context:
+    id: context
+    negate: null
+    values: ''

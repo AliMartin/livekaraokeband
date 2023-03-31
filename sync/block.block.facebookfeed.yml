@@ -1,0 +1,39 @@
+uuid: 1e67fd7a-f5ea-43ef-8722-e3696f106d28
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:649498de-3377-40ca-bb73-00c7295010e2'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - lkb9
+id: facebookfeed
+theme: lkb9
+region: facebook
+weight: -17
+provider: null
+plugin: 'block_content:649498de-3377-40ca-bb73-00c7295010e2'
+settings:
+  id: 'block_content:649498de-3377-40ca-bb73-00c7295010e2'
+  label: 'Follow us on Facebook'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

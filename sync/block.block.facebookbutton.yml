@@ -1,0 +1,34 @@
+uuid: 398378bd-bf02-44f5-addc-6d9043c906a1
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:c7c77967-5884-432b-9962-2e5227a5ca8e'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkb9
+id: facebookbutton
+theme: lkb9
+region: facebook
+weight: 0
+provider: null
+plugin: 'block_content:c7c77967-5884-432b-9962-2e5227a5ca8e'
+settings:
+  id: 'block_content:c7c77967-5884-432b-9962-2e5227a5ca8e'
+  label: 'Facebook button'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

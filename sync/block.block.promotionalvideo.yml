@@ -1,0 +1,39 @@
+uuid: 56186622-a52b-4638-9895-d8d6125f03aa
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:41304e46-a314-484a-bd01-66e6fc9da3be'
+  module:
+    - block_content
+    - context
+    - system
+  theme:
+    - lkb9
+id: promotionalvideo
+theme: lkb9
+region: content
+weight: -20
+provider: null
+plugin: 'block_content:41304e46-a314-484a-bd01-66e6fc9da3be'
+settings:
+  id: 'block_content:41304e46-a314-484a-bd01-66e6fc9da3be'
+  label: 'Promotional video'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }
+  request_path:
+    id: request_path
+    negate: false
+    pages: "<front>\r\n/weddings\r\n/rockaoke\r\n/bandeoke\r\n/live-karaoke-party-london\r\n/perfect-christmas-party-band"

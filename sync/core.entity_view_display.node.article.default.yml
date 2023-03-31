@@ -1,0 +1,101 @@
+uuid: aa3bae31-3c11-4f4e-b86f-04d2550bd861
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.field_image
+    - field.field.node.article.field_metatag
+    - field.field.node.article.field_tags
+    - node.type.article
+    - responsive_image.styles.article
+  module:
+    - ds
+    - metatag
+    - responsive_image
+    - text
+    - user
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - field_image
+        - node_title
+        - 'dynamic_block_field:node-make_enquiry_button'
+        - body
+        - 'dynamic_copy_field:node-make_enquiry_button_bottom'
+        - links
+        - field_metatag
+        - field_tags
+    fields:
+      'dynamic_copy_field:node-make_enquiry_button_bottom':
+        plugin_id: 'dynamic_copy_field:node-make_enquiry_button_bottom'
+        weight: 4
+        label: hidden
+        formatter: default
+      'dynamic_block_field:node-make_enquiry_button':
+        plugin_id: 'dynamic_block_field:node-make_enquiry_button'
+        weight: 2
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          wrapper: h1
+          class: ''
+_core:
+  default_config_hash: ChmU3AVqDKU32A_fyChG0W9dTRKmVBR58B6OClCLvZI
+id: node.article.default
+targetEntityType: node
+bundle: article
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_image:
+    type: responsive_image
+    label: hidden
+    settings:
+      responsive_image_style: article
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_metatag:
+    type: metatag_empty_formatter
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  field_tags:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+hidden: {  }

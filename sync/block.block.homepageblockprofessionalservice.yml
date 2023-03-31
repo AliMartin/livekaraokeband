@@ -1,0 +1,34 @@
+uuid: 5d2fd4ef-9d2b-44ef-ba01-b5d7c7bf1469
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:fe2bbbe0-27e1-40c7-9400-f8dddeaee97f'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkb9
+id: homepageblockprofessionalservice
+theme: lkb9
+region: home_page_blocks
+weight: -7
+provider: null
+plugin: 'block_content:fe2bbbe0-27e1-40c7-9400-f8dddeaee97f'
+settings:
+  id: 'block_content:fe2bbbe0-27e1-40c7-9400-f8dddeaee97f'
+  label: 'Home page block - professional service'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

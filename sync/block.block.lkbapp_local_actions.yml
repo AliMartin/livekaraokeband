@@ -1,0 +1,20 @@
+uuid: e628605b-be99-436e-86a3-b4b28b2cbb64
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: ltPOb1qpDyBWEFaLCSudpt51zaF00peAOQ_oF2WrJ3s
+id: lkbapp_local_actions
+theme: lkbapp
+region: content
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

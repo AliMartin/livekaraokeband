@@ -1,0 +1,30 @@
+uuid: f485e30d-2db0-45e1-80ed-63e3ee015834
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.amp
+    - field.field.node.news.body
+    - field.field.node.news.field_attachments
+    - field.field.node.news.field_image
+    - field.field.node.news.field_metatag
+    - field.field.node.news.field_teaser
+    - node.type.news
+  module:
+    - user
+id: node.news.amp
+targetEntityType: node
+bundle: news
+mode: amp
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  body: true
+  field_attachments: true
+  field_image: true
+  field_metatag: true
+  field_teaser: true

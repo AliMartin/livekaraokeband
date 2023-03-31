@@ -1,0 +1,78 @@
+uuid: e10060bc-e882-49fd-933a-9dc8b7e2ec1b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.video.body
+    - field.field.node.video.field_youtube
+    - node.type.video
+  module:
+    - ds
+    - text
+    - user
+    - youtube
+third_party_settings:
+  ds:
+    layout:
+      id: layout_onecol
+      library: layout_discovery/onecol
+      disable_css: false
+      entity_classes: all_classes
+      settings:
+        label: ''
+    regions:
+      content:
+        - field_youtube
+        - node_title
+        - 'dynamic_block_field:node-make_enquiry_button'
+        - body
+        - links
+    fields:
+      'dynamic_block_field:node-make_enquiry_button':
+        plugin_id: 'dynamic_block_field:node-make_enquiry_button'
+        weight: 2
+        label: hidden
+        formatter: default
+      node_title:
+        plugin_id: node_title
+        weight: 1
+        label: hidden
+        formatter: default
+        settings:
+          link: false
+          wrapper: h1
+          class: ''
+id: node.video.default
+targetEntityType: node
+bundle: video
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_youtube:
+    type: youtube_video
+    label: hidden
+    settings:
+      youtube_size: responsive
+      youtube_width: ''
+      youtube_height: ''
+      youtube_autoplay: false
+      youtube_mute: false
+      youtube_loop: false
+      youtube_controls: true
+      youtube_autohide: true
+      youtube_iv_load_policy: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden: {  }

@@ -1,0 +1,16 @@
+uuid: 95b2b11f-1878-46ad-be76-4a11b5e7e6c1
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    parent: 'main-menu:0:'
+name: 'Old News'
+type: old_news
+description: 'Displays <em>old news</em> content on the website.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

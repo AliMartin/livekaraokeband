@@ -1,0 +1,23 @@
+uuid: 94f77738-ac26-401d-a96b-bf4a306f59ee
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - lkb9
+_core:
+  default_config_hash: F3d5hyAFunLh4PhGviJF019fHn1Z3_zy5gzsQ0tX1K0
+id: lkb9_search
+theme: lkb9
+region: sidebar_second
+weight: -1
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  label_display: visible
+  provider: search
+  page_id: ''
+visibility: {  }

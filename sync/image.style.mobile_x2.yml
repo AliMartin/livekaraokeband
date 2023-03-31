@@ -1,0 +1,17 @@
+uuid: 2ca9dbdf-9eb5-4187-9213-a4fe0934172a
+langcode: en
+status: true
+dependencies:
+  module:
+    - focal_point
+name: mobile_x2
+label: mobile_x2
+effects:
+  0716b31e-21bf-44f7-ae97-f1a723196658:
+    id: focal_point_scale_and_crop
+    data:
+      width: 1000
+      height: 600
+      crop_type: focal_point
+    weight: 1
+    uuid: 0716b31e-21bf-44f7-ae97-f1a723196658

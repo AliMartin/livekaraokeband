@@ -1,0 +1,26 @@
+uuid: 8c10607b-3403-4101-a744-144fee3d270e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.show.field_show_date
+    - field.field.node.show.field_show_location
+    - field.field.node.show.field_song_list
+    - node.type.show
+  module:
+    - user
+id: node.show.teaser
+targetEntityType: node
+bundle: show
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_show_date: true
+  field_show_location: true
+  field_song_list: true

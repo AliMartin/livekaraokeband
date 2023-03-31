@@ -1,0 +1,34 @@
+uuid: e71fa3f5-d5fb-404e-b4f2-19b6b722e171
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:1177b52f-7447-474b-9e7d-8696ed5496c7'
+  module:
+    - block_content
+    - context
+  theme:
+    - lkb9
+id: homepageblockperfectentertainment
+theme: lkb9
+region: home_page_blocks
+weight: -6
+provider: null
+plugin: 'block_content:1177b52f-7447-474b-9e7d-8696ed5496c7'
+settings:
+  id: 'block_content:1177b52f-7447-474b-9e7d-8696ed5496c7'
+  label: 'Home page block - perfect entertainment'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

@@ -1,0 +1,31 @@
+uuid: a033a787-62cf-41d2-8bc6-8d613b52b6d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.logo_strip
+  module:
+    - blockgroup
+    - context
+  theme:
+    - lkb9
+id: logostrip
+theme: lkb9
+region: footer
+weight: -19
+provider: null
+plugin: 'block_group:logo_strip'
+settings:
+  id: 'block_group:logo_strip'
+  label: 'Logo strip'
+  label_display: '0'
+  provider: blockgroup
+visibility:
+  request_path_exclusion:
+    id: request_path_exclusion
+    negate: null
+    pages: ''
+  view_inclusion:
+    id: view_inclusion
+    negate: null
+    view_inclusion: {  }

@@ -1,0 +1,20 @@
+uuid: fd2a9620-0228-477c-8e6a-34c8c56f667a
+langcode: en
+status: true
+dependencies:
+  theme:
+    - lkb9
+_core:
+  default_config_hash: ffxthelqQF8xcr4GTG4HlaNNsluiHftN0pujmQpW0bQ
+id: lkb9_local_actions
+theme: lkb9
+region: header
+weight: -2
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

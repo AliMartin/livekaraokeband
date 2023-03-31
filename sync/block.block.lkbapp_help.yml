@@ -1,0 +1,22 @@
+uuid: 29c6a0ef-679b-4892-badf-7fbcda905df7
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: yRUGCgeHuHrnOY9kS7eeTAo7Y2uxxZCDgDDduzjajqU
+id: lkbapp_help
+theme: lkbapp
+region: content
+weight: -3
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  label_display: '0'
+  provider: help
+visibility: {  }

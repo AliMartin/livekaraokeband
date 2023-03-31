@@ -1,0 +1,54 @@
+uuid: 52ca8f36-812d-4273-804f-a6c79e8e4243
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.basic
+    - field.field.block_content.basic.body
+    - field.field.block_content.basic.field_background_image
+    - field.field.block_content.basic.field_youtube
+  module:
+    - background_image_formatter
+    - text
+    - youtube
+_core:
+  default_config_hash: orJpHUlAc_wiQLMUjIgEJXGeiqylGHMPcmNRjGtct-M
+id: block_content.basic.default
+targetEntityType: block_content
+bundle: basic
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_background_image:
+    type: background_image_formatter
+    label: hidden
+    settings:
+      image_style: ''
+      background_image_output_type: inline
+      background_image_selector: .block-block-content
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_youtube:
+    type: youtube_video
+    label: hidden
+    settings:
+      youtube_size: responsive
+      youtube_width: ''
+      youtube_height: ''
+      youtube_autoplay: false
+      youtube_mute: false
+      youtube_loop: false
+      youtube_controls: true
+      youtube_autohide: true
+      youtube_iv_load_policy: true
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden: {  }

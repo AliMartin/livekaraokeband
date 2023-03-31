@@ -1,0 +1,33 @@
+uuid: 3e084f58-ca57-4bdd-8f5b-0d34298b9d7c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.client
+  module:
+    - image
+id: node.client.field_image
+field_name: field_image
+entity_type: node
+bundle: client
+label: Image
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: client
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: 50MB
+  max_resolution: ''
+  min_resolution: 544x306
+  alt_field: true
+  alt_field_required: true
+  title_field: true
+  title_field_required: false
+  default_image: 0
+field_type: image

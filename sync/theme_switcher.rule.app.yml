@@ -1,0 +1,36 @@
+uuid: eaf88953-73d3-405b-b8e6-1ac41ff75e26
+langcode: en
+status: true
+dependencies:
+  module:
+    - context
+    - system
+id: app
+label: App
+weight: 0
+theme: lkbapp
+admin_theme: ''
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  request_path:
+    id: request_path
+    negate: false
+    pages: "/events\r\n/host\r\n/entries/*\r\n/show/*"

@@ -1,0 +1,47 @@
+uuid: 57b23007-190b-4e7e-be69-c2b8048ceb13
+langcode: en
+status: true
+dependencies:
+  config:
+    - blockgroup.block_group_content.events
+  module:
+    - blockgroup
+    - context
+    - system
+  theme:
+    - lkb9
+id: events
+theme: lkb9
+region: content
+weight: -18
+provider: null
+plugin: 'block_group:events'
+settings:
+  id: 'block_group:events'
+  label: Events
+  label_display: '0'
+  provider: blockgroup
+visibility:
+  context_all:
+    id: context_all
+    negate: null
+    values: ''
+  context:
+    id: context
+    negate: null
+    values: ''
+  user_status:
+    id: user_status
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    user_status:
+      viewing_profile: '0'
+      logged_viewing_profile: '0'
+      own_page_true: '0'
+      field_value: '0'
+    user_fields: uid
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

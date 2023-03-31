@@ -1,0 +1,27 @@
+uuid: 7551fb54-ff14-46a3-bf1b-55fcf2d7f50c
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.footer
+  module:
+    - system
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: iujDUky7yzVuL6YC2f-_XetOcNMcy77je-kLxyyrAz4
+id: lkbapp_footer
+theme: lkbapp
+region: footer
+weight: -6
+provider: null
+plugin: 'system_menu_block:footer'
+settings:
+  id: 'system_menu_block:footer'
+  label: Footer
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

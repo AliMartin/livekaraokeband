@@ -1,0 +1,27 @@
+uuid: ced468a6-9f94-49bd-a5e2-18672030dfef
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: bRz6faMCeVF8cYvqDn5WrfOxH7vGgr0pVTgN3JUM2CQ
+id: lkbapp_account_menu
+theme: lkbapp
+region: nav_additional
+weight: -7
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'User account menu'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility: {  }

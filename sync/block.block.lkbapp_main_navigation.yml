@@ -1,0 +1,27 @@
+uuid: e18210e1-2edb-425d-adb8-edbb95508237
+langcode: en
+status: false
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - lkbapp
+_core:
+  default_config_hash: Div6BKq3LjqlVHWQQ0tNoSFlme5DlRjo0UgHxpOawLA
+id: lkbapp_main_navigation
+theme: lkbapp
+region: nav_main
+weight: 0
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: true
+visibility: {  }
