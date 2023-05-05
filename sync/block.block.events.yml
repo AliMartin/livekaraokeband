@@ -1,6 +1,6 @@
 uuid: 57b23007-190b-4e7e-be69-c2b8048ceb13
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - blockgroup.block_group_content.events
