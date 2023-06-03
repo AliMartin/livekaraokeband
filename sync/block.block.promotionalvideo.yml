@@ -13,7 +13,7 @@ dependencies:
 id: promotionalvideo
 theme: lkb9
 region: content
-weight: -20
+weight: -19
 provider: null
 plugin: 'block_content:41304e46-a314-484a-bd01-66e6fc9da3be'
 settings:

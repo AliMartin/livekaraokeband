@@ -1,26 +1,29 @@
-uuid: 57b23007-190b-4e7e-be69-c2b8048ceb13
+uuid: 7a7d7a1c-13db-4db4-be4a-baec29f26f3f
 langcode: en
-status: false
+status: true
 dependencies:
-  config:
-    - blockgroup.block_group_content.events
+  content:
+    - 'block_content:basic:3af229d0-ff70-4f6c-a4d5-a942b861535a'
   module:
-    - blockgroup
+    - block_content
     - context
     - system
   theme:
     - lkb9
-id: events
+id: topbanner
 theme: lkb9
 region: content
-weight: -11
+weight: -20
 provider: null
-plugin: 'block_group:events'
+plugin: 'block_content:3af229d0-ff70-4f6c-a4d5-a942b861535a'
 settings:
-  id: 'block_group:events'
-  label: Events
+  id: 'block_content:3af229d0-ff70-4f6c-a4d5-a942b861535a'
+  label: 'Top banner'
   label_display: '0'
-  provider: blockgroup
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
 visibility:
   context_all:
     id: context_all

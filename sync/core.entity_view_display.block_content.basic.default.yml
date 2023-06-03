@@ -31,7 +31,7 @@ content:
     settings:
       image_style: ''
       background_image_output_type: inline
-      background_image_selector: .block-block-content
+      background_image_selector: ''
     third_party_settings: {  }
     weight: 0
     region: content

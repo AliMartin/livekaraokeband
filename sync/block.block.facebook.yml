@@ -1,6 +1,6 @@
 uuid: 244edd39-36aa-45c0-be06-ccc8468f1b98
 langcode: en
-status: true
+status: false
 dependencies:
   config:
     - blockgroup.block_group_content.facebook

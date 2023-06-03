@@ -515,3 +515,57 @@
 #block-events a.btn.make-enquiry {
 	margin: 0;
 }
+
+
+
+#block-topbanner {
+	background-image: url('../images/banner-background.jpg');
+	background-position: center center;
+	background-size: cover;
+	height: 100%;
+	padding: 45px;
+	margin-bottom: 45px;
+	text-align: center;
+}
+
+#block-topbanner .field--name-body {
+	max-width: inherit;
+	margin-bottom: 0;
+}
+
+#block-topbanner .banner-text {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	font-size: 26px;
+	line-height: 30px;
+	margin-bottom: 20px;
+}
+
+#block-topbanner .banner-logo-wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 30px;
+	justify-content: center;
+	align-items: center;
+}
+
+#block-topbanner .banner-logo img {
+	width: 180px;
+	height: auto;
+}
+
+@media screen and (max-width: 767px) {
+	#block-topbanner {
+		padding: 30px 15px;
+		margin-bottom: 30px;
+	}
+
+	#block-topbanner .banner-text {
+		font-size: 24px;
+		line-height: 28px;
+	}
+
+	#block-topbanner .banner-logo img {
+		width: 110px;
+	}	
+}

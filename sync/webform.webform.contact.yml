@@ -36,6 +36,18 @@ elements: |-
     '#title': 'Step 2'
     '#prev_button_label': Previous
     '#next_button_label': Next
+    type_of_enquiry:
+      '#type': radios
+      '#title': 'Is this a private or corporate enquiry? This will make sure we put you in touch with the right agent.'
+      '#options':
+        private: Private
+        corporate: Corporate
+      '#required': true
+  step_3:
+    '#type': webform_wizard_page
+    '#title': 'Step 2'
+    '#prev_button_label': Previous
+    '#next_button_label': Next
     email:
       '#type': email
       '#title': Email
@@ -44,7 +56,7 @@ elements: |-
       '#required': true
       '#default_value': '[current-user:mail]'
       '#format_items': comma
-  step_3:
+  step_4:
     '#type': webform_wizard_page
     '#title': 'Step 3'
     '#prev_button_label': Previous
@@ -55,7 +67,7 @@ elements: |-
       '#title_display': invisible
       '#placeholder': 'What''s your telephone number?'
       '#format_items': comma
-  step_4:
+  step_5:
     '#type': webform_wizard_page
     '#title': 'Step 4'
     '#prev_button_label': Previous
@@ -294,9 +306,89 @@ handlers:
     handler_id: email_notification
     label: 'Email notification'
     notes: ''
-    status: true
+    status: false
     conditions: {  }
     weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: 'info@alimartin.com,bookingagent1@tailored-entertainment.com'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@livekaraokeband.co.uk
+      from_options: {  }
+      from_name: '* Live Karaoke Band *'
+      reply_to: noreply@livekaraokeband.co.uk
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '* Live Karaoke Band Enquiry *'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_notification_corporate:
+    id: email
+    handler_id: email_notification_corporate
+    label: 'Email notification - corporate'
+    notes: ''
+    status: true
+    conditions:
+      enabled:
+        ':input[name="type_of_enquiry"]':
+          value: corporate
+    weight: 2
+    settings:
+      states:
+        - completed
+      to_mail: 'info@alimartin.com,bookingagent1@tailored-entertainment.com'
+      to_options: {  }
+      bcc_mail: ''
+      bcc_options: {  }
+      cc_mail: ''
+      cc_options: {  }
+      from_mail: noreply@livekaraokeband.co.uk
+      from_options: {  }
+      from_name: '* Live Karaoke Band - CORPORATE ENQUIRY *'
+      reply_to: noreply@livekaraokeband.co.uk
+      return_path: ''
+      sender_mail: ''
+      sender_name: ''
+      subject: '* Live Karaoke Band Enquiry *'
+      body: _default
+      excluded_elements: {  }
+      ignore_access: false
+      exclude_empty: true
+      exclude_empty_checkbox: false
+      exclude_attachments: false
+      html: false
+      attachments: false
+      twig: false
+      theme_name: ''
+      parameters: {  }
+      debug: false
+  email_notification_private:
+    id: email
+    handler_id: email_notification_private
+    label: 'Email notification - private'
+    notes: ''
+    status: true
+    conditions:
+      enabled:
+        ':input[name="type_of_enquiry"]':
+          value: private
+    weight: 3
     settings:
       states:
         - completed

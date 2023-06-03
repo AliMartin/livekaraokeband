@@ -13,7 +13,7 @@ dependencies:
 id: makeenquirybutton
 theme: lkb9
 region: content
-weight: -19
+weight: -18
 provider: null
 plugin: 'block_content:2ee06822-ec57-4716-819a-7ca83edcabf9'
 settings:
